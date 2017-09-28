@@ -12,7 +12,10 @@ app.conf.update(
     result_expires=3600,
 )
 app.conf.task_routes = {
-    'celery_test.tasks.add': {'queue': 'add_queue_cluster_1'}}
+    'celery_test.tasks.add': {'queue': 'add_queue_cluster_1',
+                              'exchange': 'celery_test',
+                              'routing_key': 'add_task',
+                              }}
 
 app.conf.task_queues = (
     # Queue('feed_tasks',    routing_key='feed.#'),

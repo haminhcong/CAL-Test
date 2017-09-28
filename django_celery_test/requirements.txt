@@ -1,0 +1,12 @@
+django>=1.9.8
+sqlalchemy>=1.0.14
+celery>=4.0
+django-model-utils
+
+mysql-python
+
+requests
+
+Pillow<3.5.0
+
+eventlet
